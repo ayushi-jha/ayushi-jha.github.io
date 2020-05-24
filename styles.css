@@ -1,0 +1,129 @@
+body {
+    padding-left: 50px;
+    padding-right: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+}
+ul, li {margin:0; padding: 0;}
+
+.navbar {
+	margin: 0 auto; 
+	max-width: 1000px;
+	color:black;
+	height: 100px;
+}
+.navbar li {
+		list-style-type: none;
+		padding: 5px;
+		font-size: 24px;
+		font-family: "Playfair Display";
+}
+.main-navbar {
+	float:left;
+	font-size: 48px;
+	padding-top: 5px;
+	font-family: 'Yatra One', cursive;
+	text-shadow: 2px 2px #fdd835;
+}
+.navbar ul {
+	float:right;
+	display: flex;
+}
+.navbar a {
+	text-decoration: none;
+	color: #2c3e50;
+}
+.description {
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 24px;
+    max-width: 800px;
+    margin-top: 10%;
+}
+.fa {
+	font-size: 36px;
+}
+.fa:hover {
+	text-shadow: 2px 2px #fdd835;
+}
+.buttons {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	margin-top: 20px;
+}
+.button {
+	font-family: "BS12";
+	font-size: 24px;
+	padding: 15px;
+	margin: 10px;
+	background-color: #fdd835;
+	border: 2px solid black;
+	border-radius: 5px;
+}
+.button:hover {
+   color: #fdd835;
+   background-color: black;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+}
+.cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: auto;
+	grid-gap: 1rem;
+}
+.card {
+	border: 2px solid #2c3e50;
+	border-radius: 4px;
+	padding: .5rem;
+	position: relative;
+	text-align: center;
+	
+}
+.content {
+	transition: .5s ease;
+  backface-visibility: hidden;
+}
+.card img {
+	width: 100%;
+}
+.card .button {
+  padding: 20px; 
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.card:hover .content{
+	opacity: 0.3; 
+}
+.card:hover .button {
+	opacity: 1;
+}
+@media only screen and (max-width: 600px) {
+.buttons {
+	display: block;
+}
+.description {
+	font-size: 20px;
+}
+.cards {
+	display: block;
+	padding: 10px;
+}
+.card {
+	margin: 20px;
+}
+}
