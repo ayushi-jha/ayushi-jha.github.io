@@ -118,13 +118,16 @@ a.button {
 	display: block;
 }
 .button {
-    color: #fdd835;
+    color: #000000;
 	font-size: 12px;
-	padding: 3px;
-	margin: 3px;
+	justify-content: center;
 	background-color: #fdd835;
 	border: 2px solid black;
 	border-radius: 5px;
+}
+a.button {
+    text-decoration: none;
+    color: #fdd835;
 }
 .description {
 	font-size: 20px;
