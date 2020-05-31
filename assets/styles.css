@@ -114,23 +114,55 @@ a.button {
 	opacity: 1;
 }
 @media screen and (max-device-width:640px), screen and (max-width:640px) {
+body {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.navbar {
+	margin: 0 auto; 
+	max-width: 600px;
+	color:black;
+	height: 100px;
+}
+.navbar li {
+	list-style-type: none;
+	padding: 5px;
+	font-size: 12px;
+}
+.main-navbar {
+	float:left;
+	font-size: 24px;
+	padding-top: 5px;
+}
+.navbar ul {
+	float:right;
+	display: flex;
+}
 .buttons {
 	display: block;
 }
 .button {
-    color: #000000;
+    	color: #000000;
 	font-size: 12px;
 	padding: 5px;
+	margin: 5px;
+	height: auto;
 	justify-content: center;
 	background-color: #fdd835;
 	border: 2px solid black;
 	border-radius: 5px;
 }
 a.button {
-    text-decoration: none;
-    color: #000000;
-    background-color: #fdd835;
-    padding: 5px;
+	text-decoration: none;
+	color: #000000;
+	font-size: 12px;
+	padding: 5px;
+	margin: 5px;
+	height: auto;
+	justify-content: center;
+	background-color: #fdd835;
+	border: 2px solid black;
+	border-radius: 5px;
 }
 .description {
 	font-size: 20px;
@@ -140,7 +172,7 @@ a.button {
 	padding: 10px;
 }
 .card {
-	margin: 20px;
+	margin: 10px;
 }
 .card img {
 	height: auto;
