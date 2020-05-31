@@ -113,7 +113,7 @@ a.button {
 .card:hover .button {
 	opacity: 1;
 }
-@media only screen and (max-width: 600px) {
+@media screen and (max-device-width:640px), screen and (max-width:640px) {
 .buttons {
 	display: block;
 }
