@@ -1,12 +1,12 @@
 import {
   Group,
-  Text,
   Divider,
   Box,
   Burger,
   Drawer,
   ScrollArea,
   rem,
+  Title
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { ConnectLinks } from '../Utils/ConnectLinks';
@@ -17,23 +17,18 @@ export function HeaderMegaMenu() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
 
   return (
-    <Box pb={120}>
+    <Box pb={60}>
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
           <Group h="100%" gap={0} visibleFrom="sm">
             <a href="#" className={classes.link}>
-              <Text
-                size="xl"
-                fw={900}
-                variant="gradient"
-                gradient={{ from: 'teal', to: 'lime', deg: 90 }}
-              >
+              <Title fw={100} c="var(--custom-color-accent-2)">
                 Ayushi Jha
-              </Text>
+              </Title>
             </a>
           </Group>
 
-          <ConnectLinks />
+          {/* <ConnectLinks /> */}
           <ThemeColorSwitch />
 
           <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" />

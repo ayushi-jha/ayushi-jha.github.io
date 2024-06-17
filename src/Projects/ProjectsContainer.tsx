@@ -31,7 +31,7 @@ export function ProjectsContainer() {
       <Divider />
       <Text size="sm" mb="md" mt="md">{item.description}</Text>
       <Group justify='center'>
-      {item.skills.map((skill, i) => {     
+      {item.skills.map((skill) => {     
            return (
             <Badge leftSection={(skillToBadge as any)[skill].icon} color={(skillToBadge as any)[skill].color} mr="xs"> {skill}</Badge>
         ) 

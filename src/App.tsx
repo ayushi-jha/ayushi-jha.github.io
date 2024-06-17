@@ -1,19 +1,21 @@
 import '@mantine/core/styles.css';
 import './App.css';
-import { Container, Divider, MantineProvider } from '@mantine/core';
+import { Container, MantineProvider } from '@mantine/core';
 import { HeaderMegaMenu } from './Navigation/HeaderMegaMenu';
-import { ProjectsContainer } from './Projects/ProjectsContainer';
 import { Home } from './Home/Home';
 
 function App() {
   return (
     <>
-      <MantineProvider>
+      <MantineProvider theme={{
+        fontFamily: 'Roboto Mono, monospace',
+        headings: { fontFamily: 'Yatra One, system-ui' },
+}}
+>
         <Container fluid>
         <HeaderMegaMenu />
           <Home />
-          <Divider my="xl" size="lg" />
-          <ProjectsContainer />
+          {/* Will add Projects Container later, as currently it's WIP. <ProjectsContainer /> */}
         </Container>
       </MantineProvider>
     </>

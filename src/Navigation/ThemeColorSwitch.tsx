@@ -8,14 +8,15 @@ export function ThemeColorSwitch() {
   return (
     <ActionIcon
       onClick={() => setColorScheme(computedColorScheme === 'light' ? 'dark' : 'light')}
-      variant="default"
+      variant="subtle"
+      color='var(--custom-color-accent-1)'
       size="xl"
       aria-label="Toggle color scheme"
     >
-            <Container color="transparent" lightHidden>
+            <Container lightHidden>
             <IconSun />
       </Container>
-      <Container color="transparent" darkHidden>
+      <Container darkHidden>
             <IconMoon />
       </Container>
     </ActionIcon>

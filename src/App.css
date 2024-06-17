@@ -1,52 +1,51 @@
 #root {
-  max-width: 1280px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 1rem;
 }
 
 /* For light mode */
 :root[data-mantine-color-scheme="light"] {
-  --mantine-color-body: #F2E9EB !important;
-  --mantine-color-default: #F2E9EB !important;
-  --mantine-color-default-border: transparent !important;
+  --mantine-color-body: #fbfbcf !important; /* handles the background color */
+  --custom-color-accent-1: #373668 !important;
+  --custom-color-accent-2: #ac6745 !important;
 }
+/*
+First one - red and yellow USC looking 
+  --mantine-color-body: #f6f5eb !important; 
+  --custom-color-accent-1: #9e431d !important;
+  --custom-color-accent-2: #f3b83c !important;
+
+  --mantine-color-body: #f3f6f6 !important; 
+  --custom-color-accent-1: #f35252 !important;
+  --custom-color-accent-2: #1b2b4d !important;
+
+
+*/
 
 /* For dark mode */
 :root[data-mantine-color-scheme="dark"] {
-  --mantine-color-body: #4c585f !important;
-  --mantine-color-default: #4c585f !important;
-  --mantine-color-default-border: transparent !important;
+  /* body handles the background color */
+  /* --mantine-color-body: #102230 !important;
+  --custom-color-accent-1: #e1ddd2 !important;
+  --custom-color-accent-2: #c84926 !important; */
+
+  --mantine-color-body: #0b3552 !important;
+  --custom-color-accent-1: #f7dc88 !important;
+  --custom-color-accent-2: #bb8b5c !important;
+
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+img {
+  /* border-radius: 50%;
+  border-style: solid;
+  border-width: 2px; */
+  /* border-color: var(--custom-color-accent-1); */
+  /* border-image: linear-gradient(45deg, #9e431d, #f3b83c) 1; */
+  border-bottom: 5px solid;
+  border-image: linear-gradient(90deg, var(--custom-color-accent-1), var(--custom-color-accent-2)) 1;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
+.mantine-Timeline-itemTitle	{
+  color: var(--custom-color-accent-2);
 }
