@@ -1,0 +1,46 @@
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* For light mode */
+@media (prefers-color-scheme: light) {
+:root {
+  --color-body: #fbfbcf !important; /* handles the background color */
+  --color-accent-1: #373668 !important;
+  --color-accent-2: #ac6745 !important;
+}
+}
+
+
+/* For dark mode */
+@media (prefers-color-scheme: dark) {
+:root {
+  --color-body: #0b3552 !important;
+  --color-accent-1: #f7dc88 !important;
+  --color-accent-2: #bb8b5c !important;
+}
+}
+
+body {
+  --hr-color: lightsalmon;
+  color: var(--color-accent-1);
+  background-color: var(--color-body);
+}
+
+:root hr {
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+      to right,
+      transparent,
+      #14213D 33%,
+      #14213D 66%,
+      transparent
+  );
+}
+
+
+
+
+
