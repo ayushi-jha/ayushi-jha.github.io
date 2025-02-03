@@ -17,6 +17,17 @@
   }
   }
 
+  ::-moz-selection { /* Code for Firefox */
+    color: var(--color-body-bg);
+    background: var(--color-header-text);
+  }
+  
+  ::selection {
+    color: var(--color-body-bg);
+    background: var(--color-header-text);
+  }
+  
+
   /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   :root {
